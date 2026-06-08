@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="container">
+        <h1>⌨️ Fast Typist</h1>
+        
+        <p id="target-text">loading text...</p>
+        
+        <input type="text" id="input-box" placeholder="Type here to start the game..." oninput="startTyping()">
+        
+        <div class="stats-box">
+            <p>Time Left: <span id="timer" class="highlight">15</span>s</p>
+            <p id="result-message"></p>
+        </div>
+
+        <button id="restart-btn" onclick="resetGame()">Restart Game</button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
